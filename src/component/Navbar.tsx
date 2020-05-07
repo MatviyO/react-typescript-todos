@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from 'react-router-dom'
 
  function Navbar() {
     return (
@@ -6,8 +7,8 @@ import React from "react";
             <div className="nav-wrapper px1">
                 <a href="/" className="brand-logo">React + TS</a>
                 <ul className="right hide-on-med-and-down">
-                    <li><a href="/">List</a></li>
-                    <li><a href="/">Info</a></li>
+                    <li><NavLink to="/">List</NavLink></li>
+                    <li><NavLink to="/about">Info</NavLink></li>
                 </ul>
             </div>
         </nav>
